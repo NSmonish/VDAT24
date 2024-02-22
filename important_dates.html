@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+        ul.timeline {
+            list-style-type: none;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+         /* Timeline vertical line */
+        ul.timeline:before {
+            content: ' ';
+            background: #fff;
+            display: inline-block;
+            position: absolute;
+            left: 16px;
+            width: 4px;
+            height: 100%;
+            z-index: 400;
+            border-radius: 1rem;
+        }
+        
+        li.timeline-item {
+            margin: 20px 0;
+        }
+        
+        /* Timeline item arrow */
+        .timeline-arrow {
+            border-top: 0.5rem solid transparent;
+            border-right: 0.5rem solid #fff;
+            border-bottom: 0.5rem solid transparent;
+            display: block;
+            position: absolute;
+            left: 2rem;
+        }
+        
+        /* Timeline item circle marker */
+        li.timeline-item::before {
+            content: ' ';
+            background: #ddd;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            left: 11px;
+            width: 14px;
+            height: 14px;
+            z-index: 400;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+
+        body {
+            background: #E8CBC0;
+            background: -webkit-linear-gradient(to right, #83e8ff, #636FA4);
+            background: linear-gradient(to right, #83e8ff, #636FA4);
+            min-height: 100vh;
+        }
+
+        .text-gray {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #EEEEEE;">
+        <div class="container-fluid">
+            <div id="vit-logo">
+                <a href="https://vit.ac.in/" class="navbar-brand p-0" target="_blank">
+                    <img src="./VIT Blue 2.png" alt="vit-logo" height="50px">
+                </a>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    HOME
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">VDAT 2024</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">VIT</a></li>
+                        <li><a class="dropdown-item" href="#">VSI</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">COMMITTEE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./important_dates.html">IMPORTANT DATES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">REGISTRATION</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SUBBMISSION
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">CALL FOR PAPER</a></li>
+                        <li><a class="dropdown-item" href="#">CALL FOR TUTORIAL</a></li>
+                        <li><a class="dropdown-item" href="#">CALL FOR SPONSORS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SPONSORSHIPS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SPEAKERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTS</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <div id="vlsi-logo">
+                    <a href="index.aspx" class="navbar-brand p-0" target="_blank">
+                        <img src="./VSI Logo 1.png" alt="vlsi-logo">
+                    </a>
+                </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+  <div class="container py-5">
+    <!-- For demo purpose -->
+    <div class="row text-center text-white mb-5">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="display-4">IMPORTANT DATES</h1>
+        </p>
+      </div>
+    </div>
+    <!-- End -->
+
+    <div class="row">
+      <div class="col-lg-7 mx-auto">
+        <!-- Timeline -->
+        <ul class="timeline">
+          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+            <div class="timeline-arrow"></div>
+            <h2 class="h5 mb-0">Call for Regular Papers</h2>
+            <ul>
+              <li>Full Paper Submission: 15th May 2024</li>
+              <li>Notification of Acceptance: 15th July 2024</li>
+              <li>Camera Ready Paper: 1st August 2024</li>
+            </ul>
+          </li>
+          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+            <div class="timeline-arrow"></div>
+            <h2 class="h5 mb-0">Call for Design Contest</h2>
+            <ul>
+              <li>Submission of Design: 30th May 2024</li>
+              <li>Notification of Acceptance: 15th July 2024</li>
+            </ul>
+            
+          </li>
+          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+            <div class="timeline-arrow"></div>
+            <h2 class="h5 mb-0">Call for Tutorials</h2>
+            <ul>
+              <li>Tutorial Proposal Submission: 15th May 2024</li>
+              <li>Tutorial Announcement: 1st August 2024</li>
+            </ul>
+          </li>
+        </ul>
+        <!-- End -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
