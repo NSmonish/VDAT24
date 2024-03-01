@@ -68,6 +68,27 @@
             font-size: 18px;
           }
         }
+        div.slide-right {
+          width:100%;
+          overflow:hidden;
+        }
+        div.slide-right h1,h4 {
+          animation: 1s slide-right;
+          /**animation-play-state: paused;
+          animation-delay: calc(var(--scroll) * -5s);**/
+        }
+        
+        @keyframes slide-right {
+          from {
+            margin-left: -100%;
+            width: 300%; 
+          }
+        
+          to {
+            margin-left: 0%;
+            width: 100%;
+          }
+        }
         .footer {
           color: white !important;
         }
@@ -76,7 +97,7 @@
 <body>
     <!--Nav Bar-->
     <section class="header">
-        <nav class="navbar navbar-expand-xxl" style="background-color: #EEEEEE;">
+        <nav class="navbar navbar-expand-lg" style="background-color: #EEEEEE;">
             <div class="container-fluid">
                 <div id="vit-logo">
                     <a href="https://vit.ac.in/" class="navbar-brand p-0" target="_blank">
@@ -139,14 +160,11 @@
             </div>
           </nav>
           <!--Jumbotron-->
-            <div class="p-5 text-center titlebar slidedown">
-              <div class="container">
-                <h1>28<sup>th</sup> International Symposium on VLSI Design and Test (VDAT-2024)<br />1<sup>st</sup> September - 3<sup>rd</sup> September</h1>
-                <p class="col-lg-8 mx-auto lead">
-                  
-                </p>
-              </div>
+          <div class="p-5 text-center titlebar slidedown">
+            <div class="container">
+              <h1>28<sup>th</sup> International Symposium on<br />VLSI Design and Test (VDAT-2024)<br />1<sup>st</sup> - 3<sup>rd</sup> September 2024</h1>
             </div>
+          </div>
     </section>
     <div class="slide-right">
       <h1 class="px-5 my-5">COMMITTEE</h1>
