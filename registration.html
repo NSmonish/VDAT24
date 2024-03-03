@@ -47,11 +47,8 @@
         font-size: 18px;
       }
     }
-    .VDAT24 {
-      text-align: justify;
-    }
-    .VDAT24 p {
-      font-size: large;
+    .sponsorships ul {
+        list-style-type: none;
     }
     @media (min-width: 1200px) and (max-width: 1400px) {
       nav {
@@ -68,16 +65,112 @@
         font-size: 12px !important;
       }
     }
+    table {
+        border-spacing: 1;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 6px;
+        overflow: hidden;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+      table * {
+        position: relative;
+      }
+      table td, table th {
+        padding-left: 8px;
+      }
+      table thead tr {
+        height: 60px;
+        background: #FFED86;
+        font-size: 16px;
+      }
+      table tbody tr {
+        height: 48px;
+        border-bottom: 1px solid #E3F1D5;
+      }
+      table tbody tr:last-child {
+        border: 0;
+      }
+      table td, table th {
+        text-align: left;
+      }
+      table td.l, table th.l {
+        text-align: right;
+      }
+      table td.c, table th.c {
+        text-align: center;
+      }
+      table td.r, table th.r {
+        text-align: center;
+      }
+      
+      @media screen and (max-width: 35.5em) {
+        table {
+          display: block;
+        }
+        table > *, table tr, table td, table th {
+          display: block;
+        }
+        table thead {
+          display: none;
+        }
+        table tbody tr {
+          height: auto;
+          padding: 8px 0;
+        }
+        table tbody tr td {
+          padding-left: 45%;
+          margin-bottom: 12px;
+        }
+        table tbody tr td:last-child {
+          margin-bottom: 0;
+        }
+        table tbody tr td:before {
+          position: absolute;
+          font-weight: 700;
+          width: 40%;
+          left: 10px;
+          top: 0;
+        }
+        table tbody tr td:nth-child(1):before {
+          content: "Includes";
+        }
+        table tbody tr td:nth-child(2):before {
+          content: "Platinum [4,00,000 INR]";
+        }
+        table tbody tr td:nth-child(3):before {
+          content: "Gold [3,00,000 INR]";
+        }
+        table tbody tr td:nth-child(4):before {
+          content: "Silver [2,00,000 INR]";
+        }
+      }
+      div.slide-right {
+        width:100%;
+        overflow:hidden;
+      }
+      div.slide-right h1,h2,h3 {
+        animation: 1s slide-right;
+      }
+      
+      @keyframes slide-right {
+        from {
+          margin-left: -100%;
+          width: 300%; 
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
   .footer {
     color: white !important;
     text-align: justify;
   }
-        .impdates {
-            background: #E8CBC0;
-            background: -webkit-linear-gradient(to right, #83e8ff, #636FA4);
-            background: linear-gradient(to right, #83e8ff, #636FA4);
-            min-height: 100vh;
-        }
     </style>
 </head>
 <body>
@@ -156,127 +249,119 @@
           </div>
   </section>
    <!--registration-->
-   <section class="impdates">
-   <div class="row text-center text-white mb-5 py-5">
-    <div class="col-lg-8 mx-auto">
-        <h1 class="display-4">REGISTRATION DETAILS</h1>
+   <section class="sponsorships">
+    <div class="container px-4 pb-5" id="icon-grid">
+        <div class="col-lg-12 slide-right">
+            <h1 class="my-5">REGISTRATION DETAILS</h1>
+            <h3 class="border-bottom fw-bold fs-2 mb-3" style="color: #00ADB5;">CATEGORY A: FOR ALL THREE DAYS (TUTORIALS+CONFERENCE)</h3>
+        </div>
+        <table class="my-5">
+            <thead>
+              <tr style="background-color: #222831; color: #EEEEEE">
+                <th>Category</th>
+                <th>Registration Fee *<br />(IEEE Members)</th>
+                <th>Registration Fee *<br />(Non-IEEE Members)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: justify;">Students (UG/PG/Ph.D.)</td>
+                <td>Rs. 5000</td>
+                <td>Rs. 6000</td>
+              </tr>
+              <tr>
+                <td style="text-align: justify;">Faculty/Scientists/Post-doc</td>
+                <td>Rs. 6000</td>
+                <td>Rs. 7000</td>
+              </tr>
+              <tr>
+                <td style="text-align: justify;">Industry Delegates</td>
+                <td>Rs. 6000</td>
+                <td>Rs. 9000</td>
+              </tr>
+              <tr>
+                <td style="text-align: justify;">Participants </td>
+                <td>Rs. 3000</td>
+                <td>Rs. 3000</td>
+              </tr>
+              <tr>
+                <td style="text-align: justify;">Foreign Delegates </td>
+                <td>$200</td>
+                <td>$200</td>
+              </tr>
+            </tbody>
+        </table>
+        <p style="text-align: center;">*(Plus 18% GST as per the Govt. of India)</p>
+        <div class="col-lg-12 slide-right mt-5">
+          <h3 class="border-bottom fw-bold fs-2 mb-3" style="color: #00ADB5;">CATEGORY B: FOR ALL TWO DAYS (CONFERENCE)</h3>
+        </div>
+        <table class="my-5">
+          <thead>
+            <tr style="background-color: #222831; color: #EEEEEE">
+              <th>Category</th>
+              <th>Registration Fee *<br />(IEEE Members)</th>
+              <th>Registration Fee *<br />(Non-IEEE Members)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: justify;">Students (UG/PG/Ph.D.)</td>
+              <td>Rs. 4000</td>
+              <td>Rs. 5000</td>
+            </tr>
+            <tr>
+              <td style="text-align: justify;">Faculty/Scientists/Post-doc</td>
+              <td>Rs. 5000</td>
+              <td>Rs. 6000</td>
+            </tr>
+            <tr>
+              <td style="text-align: justify;">Industry Delegates</td>
+              <td>Rs. 8000</td>
+              <td>Rs. 9000</td>
+            </tr>
+            <tr>
+              <td style="text-align: justify;">Participants </td>
+              <td>Rs. 2500</td>
+              <td>Rs. 2500</td>
+            </tr>
+            <tr>
+              <td style="text-align: justify;">Foreign Delegates </td>
+              <td>$200</td>
+              <td>$200</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="text-align: center;">*(Plus 18% GST as per the Govt. of India)</p>
+        <div class="col-lg-12 slide-right mt-5">
+          <h3 class="border-bottom fw-bold fs-2 mb-3" style="color: #00ADB5;">CATEGORY C: FOR FIRST DAY (TUTORIALS ONLY)</h3>
+        </div>
+        <table class="my-5">
+          <thead>
+            <tr style="background-color: #222831; color: #EEEEEE">
+              <th>Category</th>
+              <th>Registration Fee *</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: justify;">Students/Faculty</td>
+              <td>Rs. 1500</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="text-align: center;">*(Plus 18% GST as per the Govt. of India)</p>
+        <div class="col-lg-12">
+          <div class="slide-right">
+            <h3 class="border-bottom fw-bold fs-2 mb-3 mt-5" style="color: #00ADB5;">Registration Guidelines</h3>
+          </div>
+          <ul>
+              <li><img src="./right-arrow.gif" width="50px" height="50px"> At least one of the authors of an accepted paper/poster/design contest needs to register for VDAT 2024 in Category A and personally present the paper/poster/design at the conference for the paper to be included in the conference proceedings/to get the certificate of presentation for the poster.</li>
+              <li><img src="./right-arrow.gif" width="50px" height="50px"> It is mandatory to produce a valid student ID/ Institute ID/Industry ID card at the registration desk of the Conference/Tutorial.</li>
+              <li><img src="./right-arrow.gif" width="50px" height="50px"> ayment through <a href="https://events.vit.ac.in">https://events.vit.ac.in</a> </li>
+          </ul>
+        </div>
     </div>
-    </div>
-      <div class="container">
-        <h2>CONFERENCE REGISTRATION DETAILS</h2>
-        <ul class="p-5">
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-            aspernatur illo labore quibusdam, inventore non velit temporibus id
-            maxime illum itaque vero animi facilis quas, ad nostrum dolorum
-            asperiores tenetur.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit,
-            expedita perferendis accusamus harum quam libero sed unde corporis.
-            Quasi facilis voluptatum impedit nam obcaecati! Reprehenderit at
-            culpa totam itaque iure.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
-            facere hic ipsum illum quibusdam, obcaecati ex, ullam minima quos
-            itaque molestias quasi incidunt delectus numquam nihil debitis
-            voluptates consequuntur mollitia!
-          </li>
-          <li>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-            cupiditate deserunt aut blanditiis neque voluptates sit! Commodi
-            numquam veniam ut officiis non natus cum? Amet exercitationem labore
-            ullam eius debitis.
-          </li>
-        </ul>
-        <h2>STEPS FOR CONFERENCE REGISTRATION</h2>
-        <ul class="p-5">
-          <li>
-            Check the appropriate registration fee amount as given in above
-            tables.
-          </li>
-          <li>
-            Pay the registration fees via UPI (Bank details given below). Please
-            write “Registration for VDAT-2024” in the note/remark while
-            transferring the amount.
-          </li>
-          <li>Generate the receipt and save it in PDF/JPG.</li>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod libero
-            incidunt maxime error, Adipisci dicta consequuntur iste earum
-            accusamus.
-          </li>
-        </ul>
-      </div>
-  <div class="container py-5">
-    <h2 class="pb-5">CATEGORY A: FOR ALL THREE DAYS (TUTORIALS+CONFERENCE)</h2>
-   <table class="table table-hover table-bordered ">
-    <thead>
-      <tr>
-        <th scope="col">Category</th>
-        <th scope="col">Registration Fee(INR)</th>
-        <th scope="col">Late Registration Fee(INR)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Students (UG/PG/Ph.D/)</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Academic Faculty/Scientists/Post-doc</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Industry Delegates<</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>International Participants</td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h2 class="py-5">CATEGORY B: FOR FIRST DAY (TUTORIALS ONLY)</h2>
-   <table class="table table-hover table-bordered ">
-    <thead>
-      <tr>
-        <th scope="col">Category</th>
-        <th scope="col">Registration Fee(INR)</th>
-        <th scope="col">Late Registration Fee(INR)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Students (UG/PG/Ph.D/)</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Academic Faculty/Scientists/Post-doc</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Industry Delegates<</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>International Participants</td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  </div>
-  </section>
+</section>
    <!--Footer-->
    <section class="footer" style="background-color: #111;">
     <div class="container">
