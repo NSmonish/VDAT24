@@ -84,6 +84,36 @@
       font-size: 20px;
       padding: 5px;
     }
+    @media (max-width: 576px) {
+      .papers h1 {
+        font-size: 24px;
+      }
+      .papers h3 {
+        font-size: medium;
+        font-weight: 600;
+      }
+      .papers ul>li{
+        font-size: small;
+      }
+      .papers ul>li>img {
+        width: 10px !important;
+        height: 10px !important;
+      }
+      .papers .sub>li>img {
+        width: 25px !important;
+        height: 25px !important;
+      }
+      .papers img {
+        width: 40px !important;
+        height: 40px !important;
+      }
+    }
+    @media (min-width: 576px) {
+      .papers h3 {
+        font-size: 32px;
+        font-weight: 600;
+      }
+    }
   .footer {
     color: white !important;
   }
@@ -173,7 +203,7 @@
         <div class="row-cols-lg-1 g-4 py-5">
           <div class="col d-flex align-items-start">
             <div class="mb-5 slide-right">
-              <h3 class="fw-bold mb-0 fs-2 " style="color: #00ADB5;"><img src="./one.gif" width="70px" height="70px"> Emerging Devices and Material Technologies</h3>
+              <h3 class="mb-0" style="color: #00ADB5;"><img src="./one.gif" width="70px" height="70px"> Emerging Devices and Material Technologies</h3>
               <ul>
                 <li><img src="./arrow-circle-right.png" width="15px" height="15px"> MOS Device Modeling and Simulation</li>
                 <li><img src="./arrow-circle-right.png" width="15px" height="15px"> Multi-gate and other Emerging MOS devices</li>
@@ -187,7 +217,7 @@
           </div>
           <div class="col d-flex align-items-start">
             <div class="mb-5 slide-right">
-              <h3 class="fw-bold mb-0 fs-2" style="color: #00ADB5;"><img src="./two.gif" width="70px" height="70px"> VLSI Circuit and System Design</h3>
+              <h3 class="mb-0" style="color: #00ADB5;"><img src="./two.gif" width="70px" height="70px"> VLSI Circuit and System Design</h3>
               <ul>
                 <li><img src="./arrow-circle-right.png" width="15px" height="15px"> Low power, High-performance, and robust design of logic, memory, analog, RF and FPGA circuits</li>
                 <li><img src="./arrow-circle-right.png" width="15px" height="15px"> Clock-generation and distribution circuits including all digital PLLs and DLLs</li>
@@ -203,7 +233,7 @@
           </div>
           <div class="col d-flex align-items-start">
             <div class="mb-5 slide-right">
-              <h3 class="fw-bold mb-0 fs-2" style="color: #00ADB5;"><img src="./three.gif" width="70px" height="70px"> CAD for VLSI and Hardware Security</h3>
+              <h3 class="mb-0" style="color: #00ADB5;"><img src="./three.gif" width="70px" height="70px"> CAD for VLSI and Hardware Security</h3>
               <ul>
                 <li><img src="./arrow-circle-right.png" width="15px" height="15px"> Logic and behavioral synthesis</li>
                 <li><img src="./arrow-circle-right.png" width="15px" height="15px"> Placement, Routing and Floor planning</li> 
@@ -218,7 +248,7 @@
           </div>
           <div class="col d-flex align-items-start">
             <div class="mb-5 slide-right">
-              <h3 class="fw-bold mb-0 fs-2" style="color: #00ADB5;"><img src="./four.gif" width="70px" height="70px"> Testing and Verification</h3>
+              <h3 class="mb-0" style="color: #00ADB5;"><img src="./four.gif" width="70px" height="70px"> Testing and Verification</h3>
               <ul>
                 <li><img src="./arrow-circle-right.png" width="15px" height="15px"> Design verification, Test, Reliability and Fault tolerance</li>
                 <li><img src="./arrow-circle-right.png" width="15px" height="15px"> Formal verification</li>
@@ -232,7 +262,7 @@
           </div>
           <div class="col d-flex align-items-start">
             <div class="mb-5 slide-right">
-              <h3 class="fw-bold mb-0 fs-2" style="color: #00ADB5;"><img src="./five.gif" width="70px" height="70px"> FPGA-based Design and Embedded Systems</h3>
+              <h3 class="mb-0" style="color: #00ADB5;"><img src="./five.gif" width="70px" height="70px"> FPGA-based Design and Embedded Systems</h3>
               <ul>
                 <li><img src="./arrow-circle-right.png" width="15px" height="15px"> FPGA-based combinational/sequential logic/circuit design, Hardware/Software co-design and verification</li>
                 <li><img src="./arrow-circle-right.png" width="15px" height="15px"> Audio, Image and video processing</li>
@@ -249,7 +279,7 @@
             <div class="slide-right">
               <h1 class="border-bottom" style="color: #00ADB5">Submission Guidelines &nbsp;<img src="./submit.gif" width="70px" height="70px"></h1>
             </div>
-                  <ul>
+                  <ul class="sub">
                       <li><img src="./right-arrow.gif" width="50px" height="50px"> Authors are invited to submit original, unpublished research manuscripts on the above topics. Papers should be submitted in pdf format (Portable Document Format) as per the <b> IEEE Conference paper format.</b></li>
                       <li><img src="./right-arrow.gif" width="50px" height="50px"> The number of pages should not exceed six A4 size pages and paper should be uploaded through <a href="https://cmt3.research.microsoft.com/" target="_blank">Microsoft CMT.</a> </li>
                       <li><img src="./right-arrow.gif" width="50px" height="50px"> There will be double blind review of the paper. Therefore, do not include 'authors' name in submitted paper. A paper with 'authors' names will not be considered for review. </li>
