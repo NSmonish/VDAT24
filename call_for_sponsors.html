@@ -113,7 +113,30 @@
       div.slide-right h1,h2,h3 {
         animation: 1s slide-right;
       }
-      
+      @media (min-width: 576px) {
+        .sponsorships .mobile {
+          display: none;
+        }
+        .sponsorships h3 {
+          font-size: 32px;
+          font-weight: 800;
+        }
+      }
+      @media (max-width: 576px) {
+        .sponsorships .desktop {
+          display: none;
+        }
+        .sponsorships h1 {
+          font-size: 24px;
+        }
+        .sponsorships h3 {
+          font-size: medium;
+          font-weight: 600;
+        }
+        .sponsorships {
+          font-size: small;
+        }
+      }
       @keyframes slide-right {
         from {
           margin-left: -100%;
@@ -216,65 +239,142 @@
             <div class="slide-right">
                 <h3 class="border-bottom fw-bold fs-2 mb-3 mt-5" style="color: #00ADB5;">Sponsorship Category</h3>
             </div>
-            <table class="mt-5">
-                <thead>
-                  <tr style="background-color: #222831; color: #EEEEEE">
-                    <th>Includes</th>
-                    <th>Platinum [4,00,000 INR]</th>
-                    <th>Gold [3,00,000 INR]</th>
-                    <th>Silver [2,00,000 INR]</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td style="text-align: justify;">Product Exhibition Booth</td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: justify;">Company Name and Logo on Conference Website</td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: justify;">Standees along the route of Conference venue</td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"> [M size]</td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"> [S size]</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: justify;">Company's Logo on Screens at Session Hall</td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: justify;">Company's Logo on conference registration Kit</td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: justify;">Complimentary Registration</td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"> [6 Registrations]</td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"> [4 Registrations]</td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"> [2 Registrations]</td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: justify;">Banner at Dinning Hall</td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: justify;">Company provided poster in the Registration kit</td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                    <td><img src="./check-circle.png" width="25px" height="25px"></td>
-                  </tr>
-                </tbody>
+            <!--Desktop-->
+            <table class="mt-5 desktop">
+              <thead>
+                <tr style="background-color: #222831; color: #EEEEEE">
+                  <th>Includes</th>
+                  <th>Platinum [4,00,000 INR]</th>
+                  <th>Gold [3,00,000 INR]</th>
+                  <th>Silver [2,00,000 INR]</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: justify;">Product Exhibition Booth</td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                </tr>
+                <tr>
+                  <td style="text-align: justify;">Company Name and Logo on Conference Website</td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                </tr>
+                <tr>
+                  <td style="text-align: justify;">Standees along the route of Conference venue</td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"> [M size]</td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"> [S size]</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td style="text-align: justify;">Company's Logo on Screens at Session Hall</td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td style="text-align: justify;">Company's Logo on conference registration Kit</td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td style="text-align: justify;">Complimentary Registration</td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"> [6 Registrations]</td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"> [4 Registrations]</td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"> [2 Registrations]</td>
+                </tr>
+                <tr>
+                  <td style="text-align: justify;">Banner at Dinning Hall</td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                </tr>
+                <tr>
+                  <td style="text-align: justify;">Company provided poster in the Registration kit</td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                  <td><img src="./check-circle.png" width="25px" height="25px"></td>
+                </tr>
+              </tbody>
+          </table>
+          <table class="my-5 mobile">
+              <tbody>
+                <tr>
+                  <td style="background-color: #222831; color: #EEEEEE; text-align:center">Platinum [4,00,000 INR]</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Product Exhibition Booth</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Company Name and Logo on Conference Website</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Standees along the route of Conference venue [M size]</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Company's Logo on Screens at Session Hall</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Company's Logo on conference registration Kit</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Complimentary Registration [6 Registrations]</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Banner at Dinning Hall</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Company provided poster in the Registration kit</td>
+                </tr>
+                <tr>
+                  <td style="background-color: #222831; color: #EEEEEE; text-align:center">Gold [3,00,000 INR]</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Product Exhibition Booth</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Company Name and Logo on Conference Website</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Standees along the route of Conference venue [S size]</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Company's Logo on Screens at Session Hall</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Company's Logo on conference registration Kit</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Complimentary Registration [4 Registrations]</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Banner at Dinning Hall</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Company provided poster in the Registration kit</td>
+                </tr>
+                <tr>
+                  <td style="background-color: #222831; color: #EEEEEE; text-align:center">Silver [2,00,000 INR]</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Product Exhibition Booth</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Company Name and Logo on Conference Website</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Complimentary Registration [2 Registrations]</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Banner at Dinning Hall</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Company provided poster in the Registration kit</td>
+                </tr>
+              </tbody>
             </table>
             <table class="mt-5">
                 <tbody>
