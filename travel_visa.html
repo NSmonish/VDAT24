@@ -34,7 +34,7 @@
       color: #F9D100;
       font-weight: 800;
       font-family: Nunito;
-      font-size: 36px;
+      font-size: 48px;
       padding: 5px;
     }
     @media (max-width: 768px) {
@@ -60,19 +60,31 @@
       div.slide-right h1,h2,h3 {
         animation: 1s slide-right;
       }
-    @media (min-width: 1200px) and (max-width: 1400px) {
-      nav {
-        font-size: small !important;
+      @media (min-width: 1200px) and (max-width: 1400px) {
+        nav {
+          font-size: small !important;
+        }
+        nav ul>li {
+          font-size: small !important;
+        }
       }
-    }
-    @media (min-width: 992px) and (max-width: 1200px) {
-      nav {
-        font-size: 10px !important;
+      @media (min-width: 992px) and (max-width: 1200px) {
+        nav {
+          font-size: 10px !important;
+        }
+        nav ul>li {
+          font-size: 10px !important;
+        }
       }
-    }
     @media (max-width: 768px) {
       .VDAT24 p{
         font-size: 12px !important;
+      }
+      .visa h1 {
+        font-size: 24px;
+      }
+      .visa ul>li {
+        font-size: small;
       }
     }
   .footer {
@@ -169,8 +181,8 @@
             </div>
             <div class="row-cols-lg-1 g-4">
                 <div class="slide-right">
-                    <ul style="list-style-type: none;">
-                        <li>Visa letters will be issued only upon completion of registration and payment of all necessary fees. If you need a personal letter of invitation for the conference, please reach out to Conference Management via email at: <a href="mailto:vdat.chair@vit.ac.in">vdat.chair@vit.ac.in</a> <br /><br />
+                    <ul style="list-style-type: none; text-align: justify">
+                        <li class="lead">Visa letters will be issued only upon completion of registration and payment of all necessary fees. If you need a personal letter of invitation for the conference, please reach out to Conference Management via email at: <a href="mailto:vdat.chair@vit.ac.in">vdat.chair@vit.ac.in</a> <br /><br />
                             Kindly include the following information in your email: your complete name, mailing address, and any additional details required by your country of residence for the visa application. It is important to note that the conference cannot engage with or intervene on your behalf with any Embassy or Consulate office abroad. Therefore, promptly initiate your visa application process upon deciding to attend VDAT-2024. Additionally, no registration refunds will be issued for individuals who have received invitation letters.
                         </li>
                     </ul>
