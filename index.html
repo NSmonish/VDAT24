@@ -37,14 +37,23 @@
           font-size: 48px;
           padding: 5px;
         }
+        .date_venue {
+          font-size: 40px;
+        }
         @media (max-width: 768px) {
           .titlebar h1 {
             font-size: 24px;
+          }
+          .date_venue {
+            font-size: 20px;
           }
         }
         @media (max-width: 576px) {
           .titlebar h1 {
             font-size: 18px;
+          }
+          .date_venue {
+            font-size: 16px;
           }
         }
         .VDAT24 {
@@ -82,18 +91,9 @@
         .VDAT2024 .lead {
           font-weight: 600;
         }
-        .VDATVIT2024 {
-          background-image: url("./Group\ 33.png");
-          background-size:cover;
-        }
         .VDATVIT2024 .lead {
           font-weight: 600;
         }
-        .VDATVIT2024SENSE {
-          background-image: url("./Group\ 35.png");
-          background-size:cover;
-        }
-
         .VDATVIT2024SENSE .lead {
           font-weight: 600;
         }
@@ -126,8 +126,8 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./index.html">VDAT 2024</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="https://vit.ac.in/">VIT</a></li>
-                            <li><a class="dropdown-item" href="http://vlsi_india.tripod.com/">VSI</a></li>
+                            <li><a class="dropdown-item" href="https://vit.ac.in/" target="_blank">VIT</a></li>
+                            <li><a class="dropdown-item" href="https://www.vsi.org.in/" target="_blank">VSI</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -180,11 +180,11 @@
           <!--Jumbotron-->
             <div class="p-5 text-center titlebar slidedown">
               <div class="container">
-                <h1>28<sup>th</sup> International Symposium on<br />VLSI Design and Test (VDAT-2024)<br />1<sup>st</sup> - 3<sup>rd</sup> September 2024<br />VIT, Vellore</h1>
+                <h1>28<sup>th</sup> International Symposium on<br />VLSI Design and Test (VDAT-2024)<br /><span class="date_venue">1<sup>st</sup> - 3<sup>rd</sup> September 2024 - VIT, Vellore</span></h1>
               </div>
             </div>
     </section>
-    <a href="./submission.html"><h3 class="container my-5" style="text-align: center; color: #F9D100; background-color: #0C0B0B;"><marquee>Call for Papers for VDAT 2024</marquee></h3></a>
+    <a href="./submission.html"><h3 class="container my-5" style="text-align: center; color: #F9D100; background-color: #0C0B0B;"><marquee>Call for Papers is now open</marquee></h3></a>
     <div class="container col-xxl-12 py-5 VDAT24">
       <div class="row align-items-center g-5 pb-5 rounded-3 border shadow-lg VDAT2024" style="background-color: #19A7CE; color: white">
         <div class="col-lg-12">
@@ -202,14 +202,10 @@
       </div>
     </div>    
     <div class="container col-xxl-12 py-5 VDAT24">
-      <div class="row flex-lg-row-reverse align-items-center g-5 pb-5 rounded-3 border shadow-lg VDATVIT2024" style="background-color: #0174BE; color: white">
+      <div class="row flex-lg-row-reverse align-items-center g-5 pb-5 rounded-3 border shadow-lg VDATVIT2024" style="background-color: #19A7CE; color: white">
         <div class="col-lg-12">
           <h1 class="display-4 fw-bold lh-1">About VIT</h1>
           <p class="lead">Vellore Institute of Technology (VIT) is a Deemed to be University in Vellore, Tamil Nadu, India. It was established under Section 3 of the University Grants Commission (UGC) Act, 1956, and was founded in 1984 as a self-financing institution called the Vellore Engineering College. The Union Ministry of Human Resources Development conferred University status on Vellore Engineering College in 2001.</p>
-          <p class="lead">VIT features a total of four campuses in Vellore, Amaravati, Bhopal, and Chennai. VIT is a leading private university for higher education and research in Engineering, Science, Agriculture, Law, and Management. </p>
-          <p class="lead">VIT consistently ranks among the country's best institutions and aspires to emerge as a global leader. The Engineering and Technology subject areas of VIT are the 240th best in the World and the 9th best in India, and eight subjects of VIT are within the top 500 in the world (as per QS World University Rankings by Subject 2023).</p>
-          <p class="lead">VIT is the 8th best University, the 11th best research institution, and the 11th best engineering institution in India (NIRF Ranking, Govt. of India 2023). VIT is ranked among the top 601-700 Universities in the world and one of the top 3 Institutions in India (Shanghai ARWU Ranking 2022). VIT has NAAC Accreditation with an A++ grade (3.66 out of 4) and is the 163rd-best Institution in Asia (QS - Asia University Rankings 2024). We are extremely proud for VIT's achievement of ranking 201-250 globally in QS World rakings by subject for Electrical and Electronics Engineering.
-          </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start pb">
             <a target=”_blank” href="https://vit.ac.in/"><button type="button" class="btn btn-light btn-lg px-4 me-md-2 fw-bold">For More Information</button></a>
           </div>
@@ -220,8 +216,7 @@
       <div class="row flex-lg-row-reverse align-items-center g-5 pb-5 rounded-3 border shadow-lg VDATVIT2024SENSE" style="background-color: #0174BE; color: white">
         <div class="col-lg-12">
           <h1 class="display-4 fw-bold lh-1">About SENSE</h1>
-          <p class="lead">The School of Electronics Engineering (SENSE) at VIT was established to provide cutting-edge knowledge in Electronics, Communication Engineering, and related fields. Currently, SENSE offers three undergraduate programs and six postgraduate programs. The recently introduced B.Tech program in Electronics Engineering with a specialization in VLSI Technology, marks a noteworthy addition. The school has well-equipped laboratories with outstanding infrastructure in Electronics, Communication, VLSI, Embedded Systems, Sensors, and Nanotechnology. State-of-the-art simulation tools are employed to address diverse specializations, encompassing facilities for design, analysis, simulation and the synthesis of both experimental and theoretical results. SENSE actively encourages students to undertake their final year projects in industry, research organizations.</p>
-          <p class="lead">Additionally, the school features industry-sponsored advanced laboratories dedicated to research and development. Memoranda of Understanding (MoUs), with various foreign universities, research organizations, and industries facilitate student and faculty exchanges. The faculty, all holding PhDs, play a pivotal role in research and development activities. They are actively engaged in projects funded by government organizations such as DRDO, ISRO (RESPOND), BRNS, as well as agencies like DST. Qualified students are placed on campus, with a significant number securing positions in core companies annually. Graduates from the M.Tech VLSI Design program consistently find placements in reputable VLSI industries. They contribute to the strength of the School by delivering alumni lectures, inspiring, and guiding their juniors in the latest developments in VLSI design and fabrication. </p>
+          <p class="lead">The School of Electronics Engineering (SENSE) at VIT was established to provide cutting-edge knowledge in Electronics, Communication Engineering, and related fields.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <a target=”_blank” href="https://vit.ac.in/schools/school-of-electronics-engineering"><button type="button" class="btn btn-light btn-lg px-4 me-md-2 fw-bold">For More Information</button></a>
           </div>
