@@ -40,12 +40,20 @@
         .date_venue {
           font-size: 40px;
         }
+        .theme {
+          color: white;
+          font-size: 28px;
+        }
         @media (max-width: 768px) {
           .titlebar h1 {
             font-size: 24px;
           }
           .date_venue {
             font-size: 20px;
+          }
+          .theme {
+            color: white;
+            font-size: 15px;
           }
         }
         @media (max-width: 576px) {
@@ -54,6 +62,10 @@
           }
           .date_venue {
             font-size: 16px;
+          }
+          .theme {
+            color: white;
+            font-size: 10px;
           }
         }
         .VDAT24 {
@@ -96,6 +108,40 @@
         }
         .VDATVIT2024SENSE .lead {
           font-weight: 600;
+        }
+        .vitv {
+          background-image: url('./3D_0029\ 1.png'); 
+          background-position: center;
+          background-size: 150%;
+          height: 30vh;
+        }
+        .vitc {
+          background-image: url('./vit-c.jpeg'); 
+          background-position: center;
+          background-size: 150%;
+        }
+        .vitb {
+          background-image: url('./vitb.jpg'); 
+          background-position: center;
+          background-size: 150%;
+        }
+        .vitap {
+          background-image: url('./vitap.jpg'); 
+          background-position: center;
+          background-size: 200%;
+        }
+        .small {
+          font-weight: 600 !important;
+        }
+        .feature-icon {
+          width: 4rem;
+          height: 4rem;
+          border-radius: .75rem;
+        }
+        .progoff {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
       .footer {
         color: white !important;
@@ -180,7 +226,7 @@
           <!--Jumbotron-->
             <div class="p-5 text-center titlebar slidedown">
               <div class="container">
-                <h1>28<sup>th</sup> International Symposium on<br />VLSI Design and Test (VDAT-2024)<br /><span class="date_venue">1<sup>st</sup> - 3<sup>rd</sup> September 2024 - VIT, Vellore</span></h1>
+                <h1>28<sup>th</sup> International Symposium on<br />VLSI Design and Test (VDAT-2024)<br /><span class="date_venue">1<sup>st</sup> - 3<sup>rd</sup> September 2024 - VIT, Vellore</span><br /><span class="theme">Emerging Technologies for VLSI Design Ecosystem</span></h1>
               </div>
             </div>
     </section>
@@ -205,7 +251,114 @@
       <div class="row flex-lg-row-reverse align-items-center g-5 pb-5 rounded-3 border shadow-lg VDATVIT2024" style="background-color: #19A7CE; color: white">
         <div class="col-lg-12">
           <h1 class="display-4 fw-bold lh-1">About VIT</h1>
-          <p class="lead">Vellore Institute of Technology (VIT) is a Deemed to be University in Vellore, Tamil Nadu, India. It was established under Section 3 of the University Grants Commission (UGC) Act, 1956, and was founded in 1984 as a self-financing institution called the Vellore Engineering College. The Union Ministry of Human Resources Development conferred University status on Vellore Engineering College in 2001.</p>
+          <p class="lead">VIT (Vellore Institute of Technology), established in 1984, was conferred with the status of a deemed university in 2001 by the Government of India. In three decades, the Institution has emerged as an innovator in higher education, growing from 180 students to 67,000+ students. Today, it is counted among the most prominent and respected universities in India, featuring top-ranked academic programmes.</p>
+          <div class="container px-4" id="custom-cards">
+            <h2 class="border-bottom pt-3">Campuses</h2>
+            <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 pb-5 pt-5">
+              <div class="col">
+                <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg vitv">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>VIT Vellore</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg vitc">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>VIT Chennai</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg vitb">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>VIT Bhopal</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg vitap">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>VIT Amaravati</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="border-bottom">Global and National Rankings</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-4 py-5">
+              <div class="col d-flex align-items-start">
+                <div>
+                  <img src="./NAAC-A++.jpg" width="100%" height="100%">
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div>
+                  <img src="./shanghai-web-banner_2023.jpg" width="100%" height="100%">
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div>
+                  <img src="./NIRF_2023.jpg" width="100%" height="100%">
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div>
+                  <img src="./NIRF_2023.jpg" width="100%" height="100%">
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div>
+                  <img src="./NIRF_2023.jpg" width="100%" height="100%">
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div>
+                  <img src="./NIRF_2023.jpg" width="100%" height="100%">
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start pb">
             <a target=”_blank” href="https://vit.ac.in/"><button type="button" class="btn btn-light btn-lg px-4 me-md-2 fw-bold">For More Information</button></a>
           </div>
@@ -215,8 +368,100 @@
     <div class="container col-xxl-12 py-5 VDAT24">
       <div class="row flex-lg-row-reverse align-items-center g-5 pb-5 rounded-3 border shadow-lg VDATVIT2024SENSE" style="background-color: #0174BE; color: white">
         <div class="col-lg-12">
-          <h1 class="display-4 fw-bold lh-1">About SENSE</h1>
-          <p class="lead">The School of Electronics Engineering (SENSE) at VIT was established to provide cutting-edge knowledge in Electronics, Communication Engineering, and related fields.</p>
+          <h1 class="display-4 fw-bold lh-1">About School of Electronics Engineering</h1>
+          <p class="lead">The School of Electronics Engineering (SENSE) at VIT was established to provide cutting-edge knowledge in Electronics, Communication Engineering, and related fields. The recently introduced B.Tech program in Electronics Engineering with a specialization in VLSI Technology, marks a noteworthy addition.</p>
+          <div class="container px-4 pt-3" id="featured-3">
+            <h2 class="pb-2 border-bottom">Programs Offered</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="feature col progoff">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <img src="./mortarboard.gif" width="100" class="rounded-3">
+                </div>
+                <h3 class="fs-1" style="color: white;">UG</h3>
+              </div>
+              <div class="feature col progoff">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <img src="./graduate.gif" width="100" class="rounded-3">
+                </div>
+                <h3 class="fs-1" style="color: white;">PG</h3>
+              </div>
+              <div class="feature col progoff">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <img src="./diploma.gif" width="100" class="rounded-3">
+                </div>
+                <h3 class="fs-1" style="color: white;">PHD</h3>
+              </div>
+            </div>
+          </div>
+          <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2 border-bottom">Milestones</h2>
+        
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 py-5">
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-2">180</h3>
+                  <p>Faculties</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-2">3031</h3>
+                  <p>UG Students</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-2">448</h3>
+                  <p>PG Students</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-2">200+</h3>
+                  <p>Ph.D Scholars</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-2">3004</h3>
+                  <p>Journal Publications</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-2">1401</h3>
+                  <p>Papers published with Colloboration</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-2">10 CR</h3>
+                  <p>Sponsored Projects</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-2">14</h3>
+                  <p>Patents granted</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-2">4</h3>
+                  <p>Faculty and student startups</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <a target=”_blank” href="https://vit.ac.in/schools/school-of-electronics-engineering"><button type="button" class="btn btn-light btn-lg px-4 me-md-2 fw-bold">For More Information</button></a>
           </div>
