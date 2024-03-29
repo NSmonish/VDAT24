@@ -37,16 +37,6 @@
       font-size: 48px;
       padding: 5px;
     }
-    @media (max-width: 768px) {
-      .titlebar h1 {
-        font-size: 24px;
-      }
-    }
-    @media (max-width: 576px) {
-      .titlebar h1 {
-        font-size: 18px;
-      }
-    }
     .tutorials ul {
         list-style-type: none;
         font-size: large;
@@ -77,22 +67,88 @@
           width: 100%;
         }
       }
-    @media (min-width: 1200px) and (max-width: 1400px) {
+      .date_venue {
+        font-size: 40px;
+      }
+      .theme {
+        color: white;
+        font-size: 28px;
+      }
+      @media (max-width: 768px) {
+        .titlebar h1 {
+          font-size: 24px;
+        }
+        .date_venue {
+          font-size: 20px;
+        }
+        .theme {
+          color: white;
+          font-size: 15px;
+        }
+      }
+      @media (max-width: 576px) {
+        .titlebar h1 {
+          font-size: 18px;
+        }
+        .date_venue {
+          font-size: 16px;
+        }
+        .theme {
+          color: white;
+          font-size: 10px;
+        }
+      }
+      .VDAT24 {
+        text-align: justify;
+      }
+      .VDAT24 p {
+        font-size: large;
+      }
       nav {
-        font-size: small !important;
+        font-size: 15px;
       }
-      nav ul>li {
-        font-size: small !important;
+      .ieeem img {
+        height: 70px;
+        width: 75px;
       }
-    }
-    @media (min-width: 992px) and (max-width: 1200px) {
-      nav {
-        font-size: 10px !important;
+      @media (min-width: 1200px) and (max-width: 1400px) {
+        nav {
+          font-size: 15px !important;
+        }
+        nav ul>li {
+          font-size: 15px !important;
+        }
+        #vit-logo img {
+          height: 40px;
+        }
+        .ieeem img {
+          height: 50px;
+          width: 55px;
+        }
+        .vlsil img {
+          height: 50px;
+          width: 55px;
+        }
       }
-      nav ul>li {
-        font-size: 10px !important;
+      @media (min-width: 992px) and (max-width: 1200px) {
+        nav {
+          font-size: 12px !important;
+        }
+        nav ul>li {
+          font-size: 12px !important;
+        }
+        #vit-logo img {
+          height: 30px;
+        }
+        .ieeem img {
+          height: 40px;
+          width: 45px;
+        }
+        .vlsil img {
+          height: 40px;
+          width: 45px;
+        }
       }
-    }
     @media (max-width: 768px) {
       .VDAT24 p{
         font-size: 12px !important;
@@ -202,19 +258,22 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <div id="vlsi-logo">
-                        <a href="index.aspx" class="navbar-brand p-0" target="_blank">
-                            <img src="./VSI Logo 1.png" alt="vlsi-logo">
-                        </a>
-                    </div>
-                </form>
+                  <div id="vlsi-logo">
+                      <a href="https://www.ieeemadras.org/" class="navbar-brand p-0 ieeem" target="_blank">
+                        <img src="./ieeemas_logo.jpeg" alt="ieeem-logo">
+                      </a>
+                      <a href="http://vlsi_india.tripod.com/" class="navbar-brand p-0 vlsil" target="_blank">
+                          <img src="./VSI Logo 1.png" alt="vlsi-logo">
+                      </a>
+                  </div>
+              </form>
               </div>
             </div>
           </nav>
           <!--Jumbotron-->
           <div class="p-5 text-center titlebar slidedown">
             <div class="container">
-              <h1>28<sup>th</sup> International Symposium on<br />VLSI Design and Test (VDAT-2024)<br />1<sup>st</sup> - 3<sup>rd</sup> September 2024<br />VIT, Vellore</h1>
+              <h1>28<sup>th</sup> International Symposium on<br />VLSI Design and Test (VDAT-2024)<br /><span class="date_venue">1<sup>st</sup> - 3<sup>rd</sup> September 2024 - VIT, Vellore</span><br /><span class="theme">Emerging Technologies for VLSI Design Ecosystem</span></h1>
             </div>
           </div>
     </section>
