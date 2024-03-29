@@ -44,6 +44,12 @@
           color: white;
           font-size: 28px;
         }
+        .prog {
+          font-size: large;
+        }
+        .vitindia {
+          font-size: 36px;
+        }
         @media (max-width: 768px) {
           .titlebar h1 {
             font-size: 24px;
@@ -57,6 +63,12 @@
           }
           .btbox {
             font-size: medium;
+          }
+          .prog {
+            font-size: small;
+          }
+          .vitindia {
+            font-size: 20px;
           }
         }
         @media (max-width: 576px) {
@@ -72,6 +84,12 @@
           }
           .btbox {
             font-size: small;
+          }
+          .prog {
+            font-size: small;
+          }
+          .vitindia {
+            font-size: 16px;
           }
         }
         .VDAT24 {
@@ -123,6 +141,9 @@
           .vlsil img {
             height: 40px;
             width: 45px;
+          }
+          .prog {
+            font-size: medium;
           }
         }
         @media (max-width: 768px) {
@@ -180,12 +201,6 @@
       .footer {
         color: white !important;
         text-align: justify;
-      }
-      .hide {
-        display: none;
-      }
-      .myDIV:hover + .hide {
-        display: block;
       }
         
     </style>
@@ -266,7 +281,7 @@
           <!--Jumbotron-->
             <div class="p-5 text-center titlebar slidedown">
               <div class="container">
-                <h1><span class="date_venue">28<sup>th</sup> International Symposium on</span><br />VLSI Design and Test (VDAT-2024)<br /><span class="date_venue">1<sup>st</sup> - 3<sup>rd</sup> September 2024<br /><span class="vitindia" style="font-size: 36px;">Vellore Institute of Technology, Vellore, INDIA</span></span><br /><span class="theme">Emerging Technologies for VLSI Design Ecosystem</span></h1>
+                <h1><span class="date_venue">28<sup>th</sup> International Symposium on</span><br />VLSI Design and Test (VDAT-2024)<br /><span class="date_venue">1<sup>st</sup> - 3<sup>rd</sup> September 2024<br /><span class="vitindia">Vellore Institute of Technology, Vellore, INDIA</span></span><br /><span class="theme">Emerging Technologies for VLSI Design Ecosystem</span></h1>
               </div>
             </div>
     </section>
@@ -410,26 +425,16 @@
         <div class="col-lg-12">
           <h1 class="display-4 fw-bold lh-1">About School of Electronics Engineering</h1>
           <p class="lead">The School of Electronics Engineering (SENSE) at VIT was established to provide cutting-edge knowledge in Electronics, Communication Engineering, and related fields. The recently introduced B.Tech program in Electronics Engineering with a specialization in VLSI Technology, marks a noteworthy addition.</p>
-          <div class="container px-4 pt-3" id="featured-3">
-            <h2 class="pb-2 border-bottom">Programs Offered</h2>
-            <div class="row g-4 pt-5 row-cols-1 row-cols-lg-3">
-              <div class="feature col progoff">
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-5">
-                  <img src="./mortarboard.gif" width="100" class="rounded-3 myDIV">
-                </div>
-                <h3 class="fs-1 myDIV" style="color: white;">3 UG</h3>
-                <ul class="hide">
+          <h2 class="pb-2 border-bottom">Programs Offered</h2>
+          <div class="container px-5 pt-3 prog" id="featured-3">
+                <h3 class="fs-4 myDIV mt-3" style="color: white;">Undergraduate</h3>
+                <ul>
                   <li>B.Tech - Electronics Engineering (VLSI Design and Technology)</li>
                   <li>B.Tech - Electronics and Communication Engineering</li>
                   <li>B.Tech - Electronics and Communication Engineering (Biomedical Engineering)</li>
                 </ul>
-              </div>
-              <div class="feature col progoff">
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-5">
-                  <img src="./graduate.gif" width="100" class="rounded-3 myDIV">
-                </div>
-                <h3 class="fs-1 myDIV" style="color: white;">6 PG</h3>
-                <ul class="hide">
+                <h3 class="fs-4 myDIV" style="color: white;">Postgraduate</h3>
+                <ul>
                   <li>M.Tech - VLSI Design</li>
                   <li>M.Tech - Embedded systems</li>
                   <li>M.Tech - Automotive Electronics</li>
@@ -437,20 +442,14 @@
                   <li>M.Tech - Internet of Things and Sensor Systems</li>
                   <li>M.Tech - Biomedical Engineering</li>
                 </ul>
-              </div>
-              <div class="feature col progoff">
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-5">
-                  <img src="./diploma.gif" width="100" class="rounded-3 myDIV">
-                </div>
-                <h3 class="fs-1 myDIV" style="color: white;">Ph.D</h3>
-                <ul class="hide">
+                <h3 class="fs-4 myDIV" style="color: white;">Ph.D</h3>
+                <ul>
                   <li>Ph.D - Full time</li>
                   <li>Direct Ph.D - Full Time</li>
                 </ul>
-              </div>
             </div>
           </div>
-          <div class="container px-4 pb-5 pt-2" id="icon-grid">
+          <div class="container px-4 pb-5 pt-5" id="icon-grid">
             <h2 class="pb-2 border-bottom">Highlights</h2>
         
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
